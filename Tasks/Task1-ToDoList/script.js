@@ -13,13 +13,26 @@ function addTask() {
     // adding input to list items
     listItem.textContent = text;
     // appending to task
+    let span= document.createElement("span");
+    span.innerHTML="\u00d7";
+    listItem.appendChild(span);
     list.appendChild(listItem);
+
+    
 
     // setting fresh for 
     textInput.value = "";
-
     
-    listItem.addEventListener("click", () => {
-        listItem.classList.toggle("check");
+    // listItem.addEventListener("click", (e) => {
+    //     listItem.classList.toggle("check");
+    // });
+    listItem.addEventListener("click", function(e){
+       if (e.target.tagName === "SPAN") {
+    e.target.parentElement.remove();
+}else{
+    listItem.classList.toggle("check");
+}
+
+        
     });
 }

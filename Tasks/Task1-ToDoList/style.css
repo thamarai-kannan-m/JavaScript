@@ -70,7 +70,7 @@ ul li::before{
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    background-image: url(radio.png);
+    background-image: url(images/radio.png);
     background-size: cover;
     background-position: center;
     top: 8px;
@@ -83,5 +83,20 @@ ul li.check{
 }
 ul li.check::before{
     color: rgb(4, 9, 4);
-    background-image: url(check-mark.png);
+    background-image: url(images/check-mark.png);
+}
+span{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    color: brown;
+    line-height: 30px;
+    border-radius: 50px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgb(250, 255, 158);
+
 }
