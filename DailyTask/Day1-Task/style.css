@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box0;
+box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 .container{
@@ -55,4 +55,33 @@ button{
 }
 button:hover{
     background-color: rgb(0, 62, 117);
+}
+ul li{
+    position: relative;
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(radio.png);
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 16px;
+
+}
+ul li.check{
+    color: green;
+    text-decoration: line-through;
+}
+ul li.check::before{
+    color: rgb(4, 9, 4);
+    background-image: url(check-mark.png);
 }
