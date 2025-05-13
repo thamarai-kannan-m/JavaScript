@@ -23,9 +23,6 @@ function addTask() {
     // setting fresh for 
     textInput.value = "";
     
-    // listItem.addEventListener("click", (e) => {
-    //     listItem.classList.toggle("check");
-    // });
     listItem.addEventListener("click", function(e){
        if (e.target.tagName === "SPAN") {
     e.target.parentElement.remove();
