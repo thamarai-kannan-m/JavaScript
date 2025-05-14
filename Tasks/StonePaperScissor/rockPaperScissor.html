@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stone-Paper-Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Stone-Paper-Scissor</h2>
+        <div class="choices">
+        <button onclick="playerOption('Stone')"><img src="images/icons8-stone-48.png"></button>
+        <button onclick="playerOption('Paper')"><img src="images/icons8-paper-48.png"></button>
+        <button onclick="playerOption('Scissor')"><img src="images/icons8-scissors-48.png"></button>
+        </div>
+       
+       <p id="uc">Your choice is: <span id="playerChoice"></span></p>
+       <p id="cc">Computer's choice is: <span id="computerChoice"></span></p>
+       <p id="resultClass">Result: <span id="result"></span></p>
+       <button id="Clear" onclick="clearDet()">Clear</button>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
