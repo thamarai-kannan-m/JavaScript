@@ -34,6 +34,18 @@ function saveNote(){
         localStorage.setItem("notes",JSON.stringify(data));
     }
 }
-// function loadNotes(){
-//     let lsNotes= JSON.parse(localStorage.getItem("notes"));
-// }
+function loadNotes(){
+    let lsNotes= JSON.parse(localStorage.getItem("notes"));
+    if(lsNotes!==null){
+        lsNotes.forEach(noteText=>{
+            addNote();
+            const notes= document.querySelectorAll(".note textarea");
+            const lastNote = notes[notes.length-1];
+            lastNote.value=noteText;
+
+        })
+    }else{
+        addNote();
+    }
+}
+loadNotes();
