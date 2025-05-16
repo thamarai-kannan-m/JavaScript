@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(185deg, rgb(46, 46, 253), rgb(0, 247, 255));
+
+}
+.container{
+    background-color: linear-gradient(white,white);
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px black;
+    width: 400px;
+}
+.header{
+    border-bottom: 1px solid;
+    background-color: #f7f7f7;
+    padding: 20px 40px;
+}
+.header h1{
+    margin: 0;
+}
+form {
+    padding: 30px 40px;
+}
+.control-form{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.control-form:hover{
+    transform: translateY(-5px);
+}
+.control-form label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.control-form input{
+    border: 2px solid white;
+    border-radius: 4px;
+    display: block;
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+.control-form input:focus{
+    outline: 0;;
+    border-color: #777;
+}
+.control-form.success input{
+    border-color: aquamarine;
+
+}
+.control-form small{
+    color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+.control-form.fail small{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    font-weight: bold;
+}
+.form button{
+    background-color: green;
+    border: 2px solid honeydew;
+    border-radius: 4px;
+    color: aliceblue;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+.form button:hover{
+    background-color: rgb(51, 75, 255);
+}
